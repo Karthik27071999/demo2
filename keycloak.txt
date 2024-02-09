@@ -1,0 +1,10 @@
+KEYCLOAK
+1.INSTALL KEYCLOAK
+2.ACCESS ADMIN IN BROWSER http:localhost:8080/auth/admin and log in user and user
+3.create realm - security domain that manages role,client app, user
+4.create user- name, email, password, role
+5.create client application-(spring boot) select openid-connect
+6.config and note client id, secret
+7.define roles -ROLES-ROLE MAPPING to assign roles to client application
+
+{"realm":"spring","public_key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwRr2X1nz48AgLxZJqyTgaJeQHT7V7gBJ8wCF03iH9Zuga8oWLtWlQBUyaEBK4Uw8yorBDo6cG0hXnlNBqEzeB/Du5KkRXQTDq4rAkvQ/1voYIoSw6mrUG6eZBXfh6SeEzQ+ah1sk5LVRu/gQGTeWlqUDCAUf3dKA5z/RbdmTdzjhiq2L6cxiwpIvl9fNR57U6pJQSsff0zkpmXznCKBnJK9pKXTAXNMz/oVpHvEsBoS5IBIKl4C+pe3WzGbS0MyY7HUvBqw35ktttxcNgBthJpah4wiHK4XBzAteP9pfun8RhaU5+s/mUvHfrDhb9CdzAFKEmRhXTEP0A2SkhFxTowIDAQAB","token-service":"http://localhost:8080/realms/spring/protocol/openid-connect","account-service":"http://localhost:8080/realms/spring/account","tokens-not-before":0}
